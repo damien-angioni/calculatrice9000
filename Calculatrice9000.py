@@ -14,11 +14,8 @@ def Effacer():
 def Egal():
     global ligne
     chk_div_0=ligne.__contains__("/0")
-    chk_root_0=ligne.__contains__("0**")
     if chk_div_0==True:
         affiche.set("Error: div by 0")
-    elif chk_root_0==True:
-        affiche.set("Error: racine de 0")
     else:
         result = str(eval(ligne))
     affiche.set(result)
